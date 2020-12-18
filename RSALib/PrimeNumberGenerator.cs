@@ -28,7 +28,7 @@ namespace RSALib
                 throw new ArgumentOutOfRangeException(nameof(min));
 
 
-            var buffer = new byte[bitLength / 8 + bitLength % 8];
+            var buffer = new byte[bitLength / 8 + (bitLength % 8 > 0 ? 1 : 0)];
             var max = BigInteger.One << bitLength;
             BigInteger n;
 
