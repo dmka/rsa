@@ -6,12 +6,12 @@ namespace RSALib
 {
     public class RSAKeyGenerator
     {
-        private PrimeGenerator _primeGenerator;
+        private PrimeNumberGenerator _primeGenerator;
 
 
         public RSAKeyGenerator()
         {
-            _primeGenerator = new PrimeGenerator(new RNGCryptoServiceProvider());
+            _primeGenerator = new PrimeNumberGenerator(new RNGCryptoServiceProvider());
         }
 
         public RSAKey Generate(int keyBitLength)

@@ -15,7 +15,7 @@ namespace RSALib.Test
         [TestCase(16)]
         public void CanGetRandomPrime(int bitLength)
         {
-            var pg = new PrimeGenerator();
+            var pg = new PrimeNumberGenerator();
 
             for (int i = 0; i < 3; i++)
             {

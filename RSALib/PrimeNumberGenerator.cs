@@ -4,16 +4,16 @@ using System.Security.Cryptography;
 
 namespace RSALib
 {
-    public class PrimeGenerator
+    public class PrimeNumberGenerator
     {
         private readonly RandomNumberGenerator _randomNumGenerator;
 
-        public PrimeGenerator(RandomNumberGenerator randomNumGenerator)
+        public PrimeNumberGenerator(RandomNumberGenerator randomNumGenerator)
         {
             _randomNumGenerator = randomNumGenerator;
         }
 
-        public PrimeGenerator()
+        public PrimeNumberGenerator()
         : this(new RNGCryptoServiceProvider())
         {
 
